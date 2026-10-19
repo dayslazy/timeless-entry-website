@@ -1,0 +1,416 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Schedule Appointment | Timeless Entry Garage Doors</title>
+  <meta name="description" content="Book garage door repair, spring replacement, opener installation, or trailer spring service online. Pick a 2-hour window — upfront pricing, 24/7 service in Brighton, Lochbuie & Adams/Weld County.">
+  <meta name="theme-color" content="#0479b3">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png">
+  <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&family=DM+Sans:opsz,wght@9..40,400..700&family=Yellowtail&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script>document.documentElement.classList.add('js');try{if(sessionStorage.getItem('te-intro-seen'))document.documentElement.classList.add('intro-seen')}catch(e){}</script>
+</head>
+<body>
+
+<!-- Intro: red garage door that rolls up when the page loads -->
+<div class="garage-intro" aria-hidden="true">
+  <div class="gi-head"></div>
+  <div class="gi-door">
+    <div class="gi-panel gi-windows"><span></span><span></span><span></span><span></span></div>
+    <div class="gi-panel"><span></span><span></span><span></span><span></span>
+      <div class="gi-plate"><span class="gi-script">Schedule Appointment</span><span class="gi-name">Timeless Entry</span><span class="gi-sub">Garage Doors</span></div>
+    </div>
+    <div class="gi-panel"><span></span><span></span><span></span><span></span>
+      <div class="gi-plate lower"><span class="gi-script">Schedule Appointment</span><span class="gi-name">Timeless Entry</span><span class="gi-sub">Garage Doors</span></div>
+    </div>
+    <div class="gi-panel"><span></span><span></span><span></span><span></span><div class="gi-handle"></div></div>
+  </div>
+</div>
+
+<!-- Icon sprite -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="i-phone" viewBox="0 0 24 24"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></symbol>
+    <symbol id="i-calendar" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></symbol>
+    <symbol id="i-arrow-right" viewBox="0 0 24 24"><path d="M5 12h14M13 5l7 7-7 7"/></symbol>
+    <symbol id="i-arrow-left" viewBox="0 0 24 24"><path d="M19 12H5M11 19l-7-7 7-7"/></symbol>
+    <symbol id="i-chevron-down" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></symbol>
+    <symbol id="i-chevron-left" viewBox="0 0 24 24"><path d="m15 18-6-6 6-6"/></symbol>
+    <symbol id="i-chevron-right" viewBox="0 0 24 24"><path d="m9 18 6-6-6-6"/></symbol>
+    <symbol id="i-spring" viewBox="0 0 24 24"><path d="M5 3h14M5 21h14M7 3l10 3-10 3 10 3-10 3 10 3-3 3"/></symbol>
+    <symbol id="i-remote" viewBox="0 0 24 24"><rect x="7" y="2" width="10" height="20" rx="3"/><circle cx="12" cy="8" r="2"/><path d="M10 14h4M10 17h4"/></symbol>
+    <symbol id="i-install" viewBox="0 0 24 24"><path d="M3 21V9l9-6 9 6v12"/><path d="M7 21v-8h10v8M7 16h10"/></symbol>
+    <symbol id="i-roller" viewBox="0 0 24 24"><circle cx="7" cy="17" r="3"/><circle cx="17" cy="7" r="3"/><path d="M7 14V3M17 21V10"/></symbol>
+    <symbol id="i-alert" viewBox="0 0 24 24"><path d="M10.3 3.9 1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0z"/><path d="M12 9v4M12 17h.01"/></symbol>
+    <symbol id="i-building" viewBox="0 0 24 24"><path d="M3 21h18M5 21V7l7-4 7 4v14"/><path d="M9 21v-6h6v6M9 10h.01M15 10h.01"/></symbol>
+    <symbol id="i-trailer" viewBox="0 0 24 24"><path d="M2 5h15v11H2zM17 12h3l2 4h-5"/><circle cx="6" cy="18" r="2"/><circle cx="12" cy="18" r="2"/></symbol>
+    <symbol id="i-wrench" viewBox="0 0 24 24"><path d="M14.7 6.3a4 4 0 0 0-5.4 5.4L3 18l3 3 6.3-6.3a4 4 0 0 0 5.4-5.4l-2.5 2.5-2.4-.6-.6-2.4z"/></symbol>
+    <symbol id="i-help" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M9.1 9a3 3 0 0 1 5.8 1c0 2-3 3-3 3M12 17h.01"/></symbol>
+    <symbol id="i-zap" viewBox="0 0 24 24"><path d="M13 2 3 14h9l-1 8 10-12h-9z"/></symbol>
+    <symbol id="i-tag" viewBox="0 0 24 24"><path d="M20.6 13.4 13.4 20.6a2 2 0 0 1-2.8 0L2 12V2h10l8.6 8.6a2 2 0 0 1 0 2.8z"/><circle cx="7" cy="7" r="1.5"/></symbol>
+    <symbol id="i-home" viewBox="0 0 24 24"><path d="m3 10 9-7 9 7v11H3z"/><path d="M9 21v-7h6v7"/></symbol>
+    <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></symbol>
+    <symbol id="i-upload" viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M17 8l-5-5-5 5M12 3v12"/></symbol>
+    <symbol id="i-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15 15 0 0 1 0 20 15 15 0 0 1 0-20z"/></symbol>
+    <symbol id="i-user" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></symbol>
+    <symbol id="i-clipboard" viewBox="0 0 24 24"><rect x="5" y="4" width="14" height="18" rx="2"/><path d="M9 2h6v4H9zM9 11h6M9 15h6"/></symbol>
+    <symbol id="i-message" viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></symbol>
+    <symbol id="i-external" viewBox="0 0 24 24"><path d="M15 3h6v6M10 14 21 3M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></symbol>
+    <symbol id="i-garage" viewBox="0 0 24 24"><path d="M2 21V8l10-5 10 5v13"/><path d="M6 21V11h12v10M6 14h12M6 17.5h12"/></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></symbol>
+    <symbol id="i-x" viewBox="0 0 24 24"><path d="M18 6 6 18M6 6l12 12"/></symbol>
+  </defs>
+</svg>
+
+<a class="sr-only" href="#wizard">Skip to booking form</a>
+
+<div class="topbar">
+  <div class="container">
+    <div class="topbar-left"><span class="live" aria-hidden="true"></span> Open 24/7 <span class="hide-sm">&nbsp;·&nbsp; Serving Adams &amp; Weld County</span></div>
+    <div class="topbar-right">
+      <a href="#" class="hide-sm"><svg class="i"><use href="#i-mail"/></svg>jonathon@timelessentry.com</a>
+      <a href="#"><svg class="i"><use href="#i-phone"/></svg>970-815-2609</a>
+    </div>
+  </div>
+</div>
+
+<header class="site-header" id="top">
+  <div class="container header-inner">
+    <a href="index.html" class="brand" aria-label="Timeless Entry Garage Doors home">
+      <img src="images/logo.png" alt="Timeless Entry Garage Doors" onerror="this.remove()">
+      <span class="brand-text" aria-hidden="true"><span class="b1">Timeless</span><span class="b2">Entry</span><span class="b3">Garage Doors</span></span>
+    </a>
+
+    <nav class="site-nav" id="site-nav" aria-label="Main">
+      <ul class="nav-list">
+        <li><a class="nav-link" href="index.html">Home</a></li>
+        <li><a class="nav-link" href="index.html#about">About</a></li>
+        <li class="has-dd">
+          <a class="nav-link" href="index.html#services">Services <svg class="i"><use href="#i-chevron-down"/></svg></a>
+          <ul class="dd">
+            <li><a href="book.html?service=spring"><span class="dd-ico"><svg class="i"><use href="#i-spring"/></svg></span>Broken Springs</a></li>
+            <li><a href="book.html?service=opener"><span class="dd-ico"><svg class="i"><use href="#i-remote"/></svg></span>Openers</a></li>
+            <li><a href="book.html?service=install"><span class="dd-ico"><svg class="i"><use href="#i-install"/></svg></span>New Door Installation</a></li>
+            <li><a href="book.html?service=cable"><span class="dd-ico"><svg class="i"><use href="#i-roller"/></svg></span>Cables, Rollers &amp; Tracks</a></li>
+            <li><a href="book.html?service=commercial"><span class="dd-ico"><svg class="i"><use href="#i-building"/></svg></span>Commercial Doors</a></li>
+            <li><a href="book.html?service=trailer"><span class="dd-ico"><svg class="i"><use href="#i-trailer"/></svg></span>Trailer Springs &amp; Cables</a></li>
+          </ul>
+        </li>
+        <li class="has-dd">
+          <a class="nav-link" href="index.html#areas">Service Areas <svg class="i"><use href="#i-chevron-down"/></svg></a>
+          <ul class="dd">
+            <li><a href="index.html#areas"><span class="dd-ico"><svg class="i"><use href="#i-pin"/></svg></span>Brighton</a></li>
+            <li><a href="index.html#areas"><span class="dd-ico"><svg class="i"><use href="#i-pin"/></svg></span>Lochbuie</a></li>
+            <li><a href="index.html#areas"><span class="dd-ico"><svg class="i"><use href="#i-pin"/></svg></span>Hudson</a></li>
+            <li><a href="index.html#areas"><span class="dd-ico"><svg class="i"><use href="#i-pin"/></svg></span>Fort Lupton</a></li>
+            <li><a href="index.html#areas"><span class="dd-ico"><svg class="i"><use href="#i-pin"/></svg></span>Commerce City</a></li>
+            <li><a href="index.html#areas"><span class="dd-ico"><svg class="i"><use href="#i-pin"/></svg></span>Thornton</a></li>
+          </ul>
+        </li>
+        <li><a class="nav-link" href="index.html#tips">Tips &amp; Tricks</a></li>
+        <li><a class="nav-link active" href="book.html" aria-current="page">Contact Us</a></li>
+      </ul>
+      <div class="mobile-nav-cta">
+        <a class="btn btn-blue btn-lg" href="#"><svg class="i"><use href="#i-phone"/></svg>970-815-2609</a>
+      </div>
+    </nav>
+
+    <div class="header-actions">
+      <a class="header-phone" href="#">
+        <span class="ring"><svg class="i"><use href="#i-phone"/></svg></span>
+        <span class="txt"><small>Call or text</small>970-815-2609</span>
+      </a>
+      <button class="nav-toggle" aria-controls="site-nav" aria-expanded="false" aria-label="Menu">
+        <svg class="i i-open"><use href="#i-menu"/></svg><svg class="i i-close"><use href="#i-x"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="book-hero">
+    <div class="container">
+      <div>
+        <span class="script">Schedule Appointment</span>
+        <h1 class="display">Book your <span class="outline">door</span> fix</h1>
+        <p>Pick a service and a 2-hour arrival window. We'll confirm by text — upfront pricing, no surprises.</p>
+      </div>
+      <div class="hero-badges">
+        <span><svg class="i"><use href="#i-zap"/></svg>24/7 service</span>
+        <span><svg class="i"><use href="#i-tag"/></svg>Upfront pricing</span>
+        <span><svg class="i"><use href="#i-shield"/></svg>No payment to book</span>
+      </div>
+    </div>
+  </section>
+
+  <div class="container book-shell">
+    <!-- ================= WIZARD ================= -->
+    <div class="wizard" id="wizard">
+      <nav class="stepper" id="stepper" aria-label="Booking steps"></nav>
+      <div class="progress" aria-hidden="true"><span id="progressBar"></span></div>
+
+      <form id="bookingForm" novalidate>
+        <!-- STEP 1: Service -->
+        <section class="step active" data-step="0" aria-labelledby="s0-title">
+          <header class="step-head">
+            <span class="step-kicker">Step 1 of 5</span>
+            <h2 class="display" id="s0-title" tabindex="-1">What do you need?</h2>
+            <p>Pick the closest match — we'll confirm the details on site.</p>
+          </header>
+          <div class="svc-grid" id="svcGrid" role="group" aria-label="Choose a service"></div>
+          <p class="err" data-err="service" role="alert" hidden><svg class="i"><use href="#i-alert"/></svg>Pick a service to continue.</p>
+
+          <label class="switch-card">
+            <input type="checkbox" id="emergency">
+            <span class="switch" aria-hidden="true"></span>
+            <span><strong>This is an emergency</strong><small>Door stuck open, car trapped, or unsafe to operate</small></span>
+          </label>
+          <div class="emergency-alert" id="emergencyAlert" hidden>
+            <span class="ico"><svg class="i"><use href="#i-zap"/></svg></span>
+            <p><strong>We're on call 24/7.</strong> For the fastest response, call or text now — you can still finish booking below.</p>
+            <a class="btn btn-red btn-sm" href="#"><svg class="i"><use href="#i-phone"/></svg>Call now</a>
+          </div>
+        </section>
+
+        <!-- STEP 2: Details -->
+        <section class="step" data-step="1" aria-labelledby="s1-title">
+          <header class="step-head">
+            <span class="step-kicker">Step 2 of 5</span>
+            <h2 class="display" id="s1-title" tabindex="-1">Tell us about the door</h2>
+            <p>The more we know, the more likely we fix it in one trip.</p>
+          </header>
+
+          <fieldset class="field">
+            <legend>Property type</legend>
+            <div class="seg">
+              <label><input type="radio" name="property" value="Residential"><span><svg class="i"><use href="#i-home"/></svg>Residential</span></label>
+              <label><input type="radio" name="property" value="Commercial"><span><svg class="i"><use href="#i-building"/></svg>Commercial</span></label>
+              <label><input type="radio" name="property" value="Enclosed Trailer"><span><svg class="i"><use href="#i-trailer"/></svg>Enclosed Trailer</span></label>
+            </div>
+          </fieldset>
+
+          <div class="row-2">
+            <div class="field">
+              <span class="label" id="doorsLabel">How many doors?</span>
+              <div class="counter" role="group" aria-labelledby="doorsLabel">
+                <button type="button" data-doors="-1" aria-label="Fewer doors">−</button>
+                <output id="doorsOut" aria-live="polite">1</output>
+                <button type="button" data-doors="1" aria-label="More doors">+</button>
+              </div>
+            </div>
+            <div class="field">
+              <label for="brand">Door or opener brand <span class="opt">optional</span></label>
+              <select class="select" id="brand" data-bind="brand">
+                <option value="">Not sure</option>
+                <option>LiftMaster / Chamberlain</option>
+                <option>Genie</option>
+                <option>Craftsman</option>
+                <option>Clopay</option>
+                <option>Amarr</option>
+                <option>Wayne Dalton</option>
+                <option>Other</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="issue">What's going on? <span class="opt">tap any that apply</span></label>
+            <div class="issue-chips" id="issueChips"></div>
+            <textarea class="textarea" id="issue" data-bind="issue" placeholder="e.g. Heard a loud bang last night and now the door won't open more than a few inches."></textarea>
+          </div>
+
+          <div class="field">
+            <span class="label">Photos <span class="opt">optional</span></span>
+            <label class="dropzone" id="dropzone">
+              <input type="file" id="photos" accept="image/*" multiple>
+              <svg class="i"><use href="#i-upload"/></svg>
+              <strong>Add photos of the door, spring, or opener</strong>
+              <small>Helps us bring the right parts · up to 6 images</small>
+            </label>
+            <div class="thumbs" id="thumbs"></div>
+          </div>
+        </section>
+
+        <!-- STEP 3: Date & time -->
+        <section class="step" data-step="2" aria-labelledby="s2-title">
+          <header class="step-head">
+            <span class="step-kicker">Step 3 of 5</span>
+            <h2 class="display" id="s2-title" tabindex="-1">Pick a day &amp; window</h2>
+            <p>Choose a 2-hour arrival window. We'll text to confirm.</p>
+          </header>
+          <div class="dt-grid">
+            <div class="cal">
+              <div class="cal-head">
+                <button type="button" class="cal-nav" id="calPrev" aria-label="Previous month"><svg class="i"><use href="#i-chevron-left"/></svg></button>
+                <strong id="calTitle" aria-live="polite"></strong>
+                <button type="button" class="cal-nav" id="calNext" aria-label="Next month"><svg class="i"><use href="#i-chevron-right"/></svg></button>
+              </div>
+              <div class="cal-dow" aria-hidden="true"><span>Sun</span><span>Mon</span><span>Tue</span><span>Wed</span><span>Thu</span><span>Fri</span><span>Sat</span></div>
+              <div class="cal-grid" id="calGrid"></div>
+            </div>
+            <div class="slots-wrap">
+              <div class="slots-head">
+                <strong id="slotsTitle">Pick a date</strong>
+                <span class="tz"><svg class="i"><use href="#i-globe"/></svg>Mountain Time</span>
+              </div>
+              <div class="slots" id="slots"></div>
+              <p class="slot-note"><svg class="i"><use href="#i-clock"/></svg>Need it sooner than you see here? Call or text 970-815-2609 — we're available 24/7.</p>
+            </div>
+          </div>
+          <p class="err" data-err="date" role="alert" hidden><svg class="i"><use href="#i-alert"/></svg>Pick a date to continue.</p>
+          <p class="err" data-err="slot" role="alert" hidden><svg class="i"><use href="#i-alert"/></svg>Pick an arrival window to continue.</p>
+        </section>
+
+        <!-- STEP 4: Contact -->
+        <section class="step" data-step="3" aria-labelledby="s3-title">
+          <header class="step-head">
+            <span class="step-kicker">Step 4 of 5</span>
+            <h2 class="display" id="s3-title" tabindex="-1">Where &amp; who?</h2>
+            <p>So we know where to show up and how to reach you.</p>
+          </header>
+          <div class="row-2">
+            <div class="field">
+              <label for="f-name">Full name <span class="req">*</span></label>
+              <div class="input-icon"><svg class="i"><use href="#i-user"/></svg><input class="input" id="f-name" data-bind="name" autocomplete="name" placeholder="Jane Smith"></div>
+              <span class="field-msg" data-msg="name"></span>
+            </div>
+            <div class="field">
+              <label for="f-phone">Mobile phone <span class="req">*</span></label>
+              <div class="input-icon"><svg class="i"><use href="#i-phone"/></svg><input class="input" id="f-phone" data-bind="phone" type="tel" inputmode="tel" autocomplete="tel" placeholder="(970) 555-0123"></div>
+              <span class="field-msg" data-msg="phone"></span>
+            </div>
+          </div>
+          <div class="field">
+            <label for="f-email">Email <span class="opt">optional</span></label>
+            <div class="input-icon"><svg class="i"><use href="#i-mail"/></svg><input class="input" id="f-email" data-bind="email" type="email" autocomplete="email" placeholder="you@example.com"></div>
+            <span class="field-msg" data-msg="email"></span>
+          </div>
+          <div class="field">
+            <label for="f-address">Service address <span class="req">*</span></label>
+            <div class="input-icon"><svg class="i"><use href="#i-pin"/></svg><input class="input" id="f-address" data-bind="address" autocomplete="street-address" placeholder="123 Main St"></div>
+            <span class="field-msg" data-msg="address"></span>
+          </div>
+          <div class="row-3">
+            <div class="field">
+              <label for="f-city">City</label>
+              <input class="input" id="f-city" data-bind="city" autocomplete="address-level2" placeholder="Brighton" list="cities">
+              <datalist id="cities"><option>Brighton</option><option>Lochbuie</option><option>Hudson</option><option>Keenesburg</option><option>Fort Lupton</option><option>Commerce City</option><option>Thornton</option><option>Henderson</option></datalist>
+            </div>
+            <div class="field">
+              <label for="f-zip">ZIP <span class="req">*</span></label>
+              <input class="input" id="f-zip" data-bind="zip" inputmode="numeric" autocomplete="postal-code" maxlength="5" placeholder="80603">
+              <span class="field-msg" data-msg="zip"></span>
+            </div>
+          </div>
+          <fieldset class="field">
+            <legend>Best way to reach you</legend>
+            <div class="seg">
+              <label><input type="radio" name="contact" value="Text"><span><svg class="i"><use href="#i-message"/></svg>Text</span></label>
+              <label><input type="radio" name="contact" value="Call"><span><svg class="i"><use href="#i-phone"/></svg>Call</span></label>
+              <label><input type="radio" name="contact" value="Email"><span><svg class="i"><use href="#i-mail"/></svg>Email</span></label>
+            </div>
+          </fieldset>
+          <label class="consent">
+            <input type="checkbox" data-bind="consent">
+            <span>It's OK to text me about this appointment (confirmations and arrival updates). Msg &amp; data rates may apply.</span>
+          </label>
+        </section>
+
+        <!-- STEP 5: Review -->
+        <section class="step" data-step="4" aria-labelledby="s4-title">
+          <header class="step-head">
+            <span class="step-kicker">Step 5 of 5</span>
+            <h2 class="display" id="s4-title" tabindex="-1">Look good?</h2>
+            <p>Double-check everything, then lock it in.</p>
+          </header>
+          <div class="review" id="review"></div>
+          <div class="review-note">
+            <svg class="i"><use href="#i-tag"/></svg>
+            <span><strong>No payment needed to book.</strong> Our tech diagnoses the issue and gives you an upfront price — work only starts once you approve it.</span>
+          </div>
+        </section>
+      </form>
+
+      <div class="wiz-foot" id="wizFoot">
+        <button type="button" class="btn btn-ghost" id="backBtn"><svg class="i"><use href="#i-arrow-left"/></svg>Back</button>
+        <p class="foot-hint" id="footHint"></p>
+        <button type="button" class="btn btn-red" id="nextBtn"><span class="label">Continue</span><svg class="i i-arrow"><use href="#i-arrow-right"/></svg></button>
+      </div>
+
+      <!-- SUCCESS -->
+      <section class="success" id="success" aria-live="polite">
+        <div class="confetti" id="confetti" aria-hidden="true"></div>
+        <div class="success-check"><svg class="i" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg></div>
+        <span class="step-kicker" id="successKicker">You're on the schedule</span>
+        <h2 class="display" id="successTitle" tabindex="-1">Request sent!</h2>
+        <p id="successText">We'll text you shortly to confirm your arrival window.</p>
+        <dl class="success-ticket" id="successTicket"></dl>
+        <div class="success-actions">
+          <button type="button" class="btn btn-blue" id="icsBtn"><svg class="i"><use href="#i-calendar"/></svg>Add to calendar</button>
+          <a class="btn btn-ghost" href="#"><svg class="i"><use href="#i-phone"/></svg>970-815-2609</a>
+          <a class="btn btn-ghost" href="index.html"><svg class="i"><use href="#i-home"/></svg>Home</a>
+        </div>
+      </section>
+    </div>
+
+    <!-- ================= SIDEBAR ================= -->
+    <aside class="book-side" aria-label="Appointment summary and contact info">
+      <div class="ticket">
+        <div class="ticket-top">
+          <span class="eyebrow light">Your appointment</span>
+          <span class="dur"><svg class="i"><use href="#i-clock"/></svg>2 HR</span>
+        </div>
+        <div class="meter" aria-hidden="true"><span id="meter"></span></div>
+        <ul class="ticket-rows">
+          <li data-row="service"><span class="ico"><svg class="i"><use href="#i-wrench"/></svg></span><span><small>Service</small><span class="val"></span><span class="sub"></span></span></li>
+          <li data-row="details"><span class="ico"><svg class="i"><use href="#i-clipboard"/></svg></span><span><small>Details</small><span class="val"></span><span class="sub"></span></span></li>
+          <li data-row="when"><span class="ico"><svg class="i"><use href="#i-calendar"/></svg></span><span><small>When</small><span class="val"></span><span class="sub"></span></span></li>
+          <li data-row="where"><span class="ico"><svg class="i"><use href="#i-pin"/></svg></span><span><small>Where</small><span class="val"></span><span class="sub"></span></span></li>
+          <li data-row="who"><span class="ico"><svg class="i"><use href="#i-user"/></svg></span><span><small>Contact</small><span class="val"></span><span class="sub"></span></span></li>
+        </ul>
+        <div class="ticket-perf" aria-hidden="true"></div>
+        <div class="ticket-bottom"><svg class="i"><use href="#i-tag"/></svg><span>Upfront pricing — you approve the quote before any work begins.</span></div>
+      </div>
+
+      <div class="side-card">
+        <h3>Timeless Entry Garage Doors LLC</h3>
+        <ul>
+          <li><svg class="i"><use href="#i-phone"/></svg><span><small>Phone</small><a href="#">970-815-2609</a></span></li>
+          <li><svg class="i"><use href="#i-mail"/></svg><span><small>Email</small><a href="#">jonathon@timelessentry.com</a></span></li>
+          <li><svg class="i"><use href="#i-pin"/></svg><span><small>Address</small><span>1814 Hematite Ln, Lochbuie, CO 80603</span><br><a class="maplink" href="https://maps.google.com/?q=1814+Hematite+Ln,+Lochbuie,+CO+80603" target="_blank" rel="noopener">View on Google Maps <svg class="i"><use href="#i-external"/></svg></a></span></li>
+          <li><svg class="i"><use href="#i-clock"/></svg><span><small>Hours</small><span>24/7 service</span></span></li>
+        </ul>
+        <div class="side-actions">
+          <a class="btn btn-blue" href="#"><svg class="i"><use href="#i-phone"/></svg>Call</a>
+          <a class="btn btn-red" href="#"><svg class="i"><use href="#i-message"/></svg>Text</a>
+        </div>
+      </div>
+
+      <div class="side-map">
+        <iframe title="Map of Timeless Entry Garage Doors" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://maps.google.com/maps?q=1814%20Hematite%20Ln%2C%20Lochbuie%2C%20CO%2080603&amp;z=13&amp;output=embed"></iframe>
+      </div>
+    </aside>
+  </div>
+</main>
+
+<footer class="site-footer" style="padding:28px 0">
+  <div class="container">
+    <div class="footer-bottom" style="margin-top:0;border-top:0;padding-top:0">
+      <span>© <span data-year></span> Timeless Entry Garage Doors LLC · 1814 Hematite Ln, Lochbuie, CO 80603</span>
+      <a href="index.html">← Back to home</a>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+<script src="book.js"></script>
+</body>
+</html>
