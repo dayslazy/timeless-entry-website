@@ -1023,8 +1023,15 @@ p { margin: 0; }
 }
 @media (max-width: 1080px) {
   .hero-grid, .why-grid, .split, .areas-grid, .reviews-top { grid-template-columns: 1fr; }
-  .hero-bg { width: 100%; height: 46%; top: auto; bottom: 0; border-radius: 56px 56px 0 0; }
-  .hero-visual { max-width: 560px; margin: 24px auto 0; width: 100%; }
+  /* the blue backdrop hangs off the photo itself, so wrapped text above can never overlap it */
+  .hero-bg { display: none; }
+  .hero-visual { max-width: 560px; margin: 56px auto 0; width: 100%; isolation: isolate; }
+  .hero-visual::before {
+    content: ""; position: absolute; z-index: -1;
+    top: -36px; bottom: -80px; left: 50%; width: 100vw; transform: translateX(-50%);
+    background: var(--slats), linear-gradient(160deg, var(--blue) 0%, var(--blue-700) 100%);
+    border-radius: 48px 48px 0 0;
+  }
   .services-grid, .tips-grid { grid-template-columns: 1fr 1fr; }
   .why-card:nth-child(2), .why-card:nth-child(4) { transform: none; }
   .why-card:nth-child(2):hover, .why-card:nth-child(4):hover { transform: translateY(-4px); }
@@ -1040,6 +1047,8 @@ p { margin: 0; }
   .nav-toggle { display: grid; }
   .header-actions .btn { display: none; }
   .header-actions { margin-left: auto; gap: 10px; }
+  .site-header::before { background: rgba(245, 240, 232, .97); }
+
   /* phone menu: drawer that slides in from the right over a dimmed page */
   .site-nav {
     position: fixed; top: 0; right: 0; bottom: 0; z-index: 60;
@@ -1114,7 +1123,7 @@ p { margin: 0; }
   .p-step p { margin: 0; }
   .float-call { left: 10px; bottom: 14px; }
   .float-247 { right: 10px; top: 14px; }
-  .stamp { right: -10px; bottom: -36px; width: 116px; height: 116px; }
+  .stamp { right: auto; bottom: auto; left: -6px; top: -34px; width: 104px; height: 104px; }
   .stamp .core { inset: 24px; font-size: 28px; }
   .frame { box-shadow: 10px 10px 0 var(--red), var(--shadow-lg); }
   .split-media .frame { box-shadow: -10px 10px 0 var(--blue), var(--shadow-lg); }
