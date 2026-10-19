@@ -18,6 +18,14 @@
     toggle.setAttribute('aria-expanded', String(open));
   });
   document.querySelectorAll('.site-nav a').forEach(a => a.addEventListener('click', closeNav));
+  document.querySelector('.nav-close')?.addEventListener('click', closeNav);
+  // tapping the dimmed page beside the drawer closes it (without clicking what's underneath)
+  document.addEventListener('click', e => {
+    if (!body.classList.contains('nav-open') || e.target.closest('.site-nav, .nav-toggle')) return;
+    e.preventDefault();
+    e.stopPropagation();
+    closeNav();
+  }, true);
   document.addEventListener('keydown', e => { if (e.key === 'Escape') closeNav(); });
   window.addEventListener('resize', () => { if (window.innerWidth > 1080) closeNav(); });
 
